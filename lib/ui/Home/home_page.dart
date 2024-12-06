@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_location_search_app/Home/widgets/home_page_list_view.dart';
+import 'package:flutter_location_search_app/ui/Home/widgets/home_page_list_view.dart';
 
 class HomePage extends StatelessWidget {
   @override
