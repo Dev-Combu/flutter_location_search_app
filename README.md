@@ -1,6 +1,7 @@
 # flutter_location_search_app
 
-A new Flutter project.
+An App using Naver Api. This is an app that searches for local names and finds information.
+
 
 ## Getting Started
 
