@@ -19,6 +19,7 @@ class _HomePageState extends ConsumerState<HomePage> {
     super.dispose();
   }
 
+  //검색 함수
   void onSearch(String text){
     ref.read(homeViewModelProvider.notifier).searchLocation(text);
     print('onSeach 호출됨');
@@ -36,7 +37,7 @@ class _HomePageState extends ConsumerState<HomePage> {
           appBar: AppBar(
             title: TextField(
               maxLines: 1,
-              onSubmitted: onSearch,
+              onSubmitted: onSearch, // 검색
               controller: textEditingController,
               decoration: InputDecoration(
                   hintText: '검색어를 입력해 주세요',
@@ -58,7 +59,6 @@ class _HomePageState extends ConsumerState<HomePage> {
               itemCount: homeState.location.length,
               itemBuilder: (context, index) {
                 final location = homeState.location[index];
-                print('Item Count: ${homeState.location.length}');
                 return GestureDetector(
                   onTap: () {
                     Navigator.push(

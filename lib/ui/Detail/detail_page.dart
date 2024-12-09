@@ -7,7 +7,7 @@ class DetailPage extends StatelessWidget {
 
 
   DetailPage(this.location);
-  Location location;
+  final Location location;
 
 
   //HTML TAG REMOVE

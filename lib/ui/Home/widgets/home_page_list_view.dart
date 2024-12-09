@@ -5,7 +5,7 @@ import 'package:html/parser.dart' as html;
 class HomePageListView extends StatelessWidget {
 
   HomePageListView(this.location);
-  Location location;
+  final Location location;
 
   //HTML TAG REMOVE
   String parseHtml(String htmlString) {
@@ -32,20 +32,20 @@ class HomePageListView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              Text( // title
                 parseHtml(location.title),
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 17,
                 ),
               ),
-              Text(
+              Text( // 카테고리
                 location.category,
                 style: TextStyle(
                   fontSize: 15,
                 ),
               ),
-              Text(
+              Text( // 주소
                 location.roadAddress,
                 style: TextStyle(
                   fontSize: 15,
