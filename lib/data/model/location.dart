@@ -15,6 +15,7 @@ class Location {
   String description;
   String telephone;
   String address;
+  String roadAddress;
   String mapx;
   String mapy;
 
@@ -25,6 +26,7 @@ class Location {
     required this.description,
     required this.telephone,
     required this.address,
+    required this.roadAddress,
     required this.mapx,
     required this.mapy,
   });
@@ -36,6 +38,7 @@ class Location {
     description: map['description'],
     telephone: map['telephone'],
     address: map['address'],
+    roadAddress: map['roadAddress'],
     mapx: map['mapx'],
     mapy: map['mapy'],
   );
@@ -48,6 +51,7 @@ class Location {
       'description': description,
       'telephone': telephone,
       'address': address,
+      'roadAddress': roadAddress,
       'mapx': mapx,
       'mapy': mapy,
     };
